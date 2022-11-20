@@ -1,3 +1,9 @@
+#Name - k.pandu ranga rao
+#Batch - AT-7
+#Project - 1
+
+
+
 # Test case ID: TC_Login_01
 #Successful Employee login to OrangeHRM portal
 
@@ -19,9 +25,10 @@ driver.close()
 
 
 
+
 # Test case ID: TC_Login_02
 
-invalied credentials
+#invalied credentials
 
 #Test case -2
 
@@ -42,8 +49,6 @@ msg = driver.find_element(By.XPATH,"//*[(text()='Invalid credentials')]").text  
 print(msg)
 print(msg == "Invalid credentials")                                                     # message printed
 driver.close()
-
-
 
 
 
@@ -81,6 +86,13 @@ driver.close()
 
 
 
+
+#Test case ID: TC_PIM_02
+
+# edited employee detailes
+# after editeding will save data
+
+
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -109,7 +121,9 @@ driver.close()
 
 
 
-#Test case ID: TC_PIM_03 
+#Test case ID: TC_PIM_03
+
+#Delete existed employee detailes
 
 import time
 from selenium import webdriver
@@ -129,3 +143,8 @@ time.sleep(3)
 driver.find_element(By.XPATH, "//*[contains(@class,'oxd-icon-button oxd-table-cell-action-space')]").click()
 driver.find_element(By.XPATH, "//*[contains(@class,'oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin')]").click()
 driver.close()
+
+
+
+
+
